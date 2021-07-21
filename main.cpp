@@ -23,7 +23,7 @@ void draw_text(string words, int x, int y, int size , sf::RenderWindow& window){
     sf::Text text;
     sf::Font font;
 
-    font.loadFromFile("arialbd.ttf"); // Load the font from a file. If file not present text will fail.
+    font.loadFromFile("arialbd.ttf"); // Load the font from a file. If file not present, text will fail.
     text.setFont(font);
     text.setCharacterSize(size);
     text.setFillColor(sf::Color::White);
