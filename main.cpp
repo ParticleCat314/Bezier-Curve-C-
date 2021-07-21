@@ -37,7 +37,7 @@ void draw_text(string words, int x, int y, int size , sf::RenderWindow& window){
 
 
 
-class sfLine : public sf::Drawable // This class is taken from the internet. NOT MINE.
+class sfLine : public sf::Drawable // This class is taken from the internet. NOT MINE. Unable to locate original source. 
 {
 public:
     sfLine(const sf::Vector2f& point1, const sf::Vector2f& point2, sf::Color color):
@@ -155,7 +155,8 @@ class curve { // Class that manages the bezier curve: Generation, drawing, etc.
 
         }
 
-        void draw_points(sf::RenderWindow& window){
+        // Draw all the neccessary points-of-interest.
+        void draw_points(sf::RenderWindow& window){ 
             // Drawing control points.
             sf::CircleShape circle1;
             sf::CircleShape circle2;
@@ -301,7 +302,7 @@ int main(int argc, char const *argv[])
     {
 
         sf::Event event;
-        while (window.pollEvent(event)) // Handle user input.
+        while (window.pollEvent(event)) // Handle user input for zoom and basic graph controls. WIP.
         {
 
             if(event.type == sf::Event::Closed){
